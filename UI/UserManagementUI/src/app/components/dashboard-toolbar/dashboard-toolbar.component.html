@@ -1,0 +1,12 @@
+<h1>Users Dashboard</h1>
+<nav>
+    <input type="text" id="search" placeholder="⌕ Search" name="search" (input)="onSearch($event)">
+    <button class="add" (click)="onAddUser()">Add user <span class="material-icons">add</span></button>
+    <select name="sort_by" id="sort-by">
+        <option value="sort_by">Sort by</option>
+    </select>
+    <select name="saved_search" id="saved-search">
+        <option value="saved_search">Saved search</option>
+    </select>
+    <div class="filters material-icons">tune</div>
+</nav>

@@ -1,0 +1,54 @@
+<div class="logo">YOURLOGO</div>
+<section>
+    <label routerLink="/dashboard" routerLinkActive="active">
+        <input type="radio" name="sidebar-tab" value="dashboard" hidden checked [checked]="router.isActive('/dashboard', true)">
+        <div>
+            <span class="material-icons">dashboard</span>Dashboard
+        </div>
+    </label>
+    <label routerLink="/users" routerLinkActive="active">
+        <input type="radio" name="sidebar-tab" value="users" hidden [checked]="router.isActive('/users', true)"> 
+        <div>
+            <span class="material-icons">equalizer</span>Users
+        </div>
+    </label>
+    <label>
+        <input type="radio" name="sidebar-tab" value="documents" hidden>
+        <div>
+            <span class="material-icons">description</span>Documents
+        </div>
+    </label>
+    <label>
+        <input type="radio" name="sidebar-tab" value="photos" hidden>
+        <div>
+            <span class="material-icons">image</span>Photos
+        </div>
+    </label>
+    <label>
+        <input type="radio" name="sidebar-tab" value="hierachy" hidden>
+        <div>
+            <span class="material-icons">account_tree</span>Hierachy
+        </div>
+    </label>
+</section>
+
+<section>
+    <label>
+        <input type="radio" name="sidebar-tab" value="messages" hidden>
+        <div>
+            <span class="material-icons">chat</span>Messages
+        </div>
+    </label>
+    <label>
+        <input type="radio" name="sidebar-tab" value="help" hidden>
+        <div>
+            <span class="material-icons">help_outline</span>Help
+        </div>
+    </label>
+    <label>
+        <input type="radio" name="sidebar-tab" value="settings" hidden>
+        <div>
+            <span class="material-icons">settings</span>Settings
+        </div>
+    </label>
+</section>

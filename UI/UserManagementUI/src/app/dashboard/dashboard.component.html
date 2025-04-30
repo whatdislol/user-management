@@ -1,0 +1,22 @@
+<app-dashboard-toolbar 
+    (addUser)="openPopup()"
+    (search)="handleSearch($event)">
+</app-dashboard-toolbar>
+
+<app-dashboard-table [usersData]="usersData()"></app-dashboard-table>
+
+<app-dashboard-nav 
+    [pageSizes]="pageSizes()"
+    [selectedPageSize]="selectedPageSize()"
+    [currentPageNumber]="currentPageNumber()"
+    [totalCount]="usersData().totalCount"
+    [lowerBound]="lowerBound"
+    [upperBound]="upperBound"
+    (pageSizeChange)="handlePageSizeChange($event)"
+    (prevPage)="handlePrevPage()"
+    (nextPage)="handleNextPage()">
+</app-dashboard-nav>
+
+@if (showPopup()) {
+    <app-add-user-popup-form (close)="closePopup()" (userAdded)="onUserAdded()"></app-add-user-popup-form>
+}

@@ -1,0 +1,21 @@
+<footer>
+    <div>Items per page:</div>
+    <select name="page_size" id="page-size" (change)="onPageSizeChange($event)">
+        @for (size of pageSizes; track $index) {
+            <option [value]="size" [selected]="size == selectedPageSize">{{ size }}</option>
+        }
+    </select>
+    <div class="stats">
+        <span class="lower-bound">{{ lowerBound }}</span>
+        -
+        <span class="upper-bound">{{ upperBound }}</span>
+        of
+        <span class="total">{{ totalCount }}</span>
+    </div>
+    <div class="prev material-icons" 
+         [class.disabled]="!canGoToPrevPage()" 
+         (click)="canGoToPrevPage() && onPrevPage()">arrow_back</div>
+    <div class="next material-icons" 
+         [class.disabled]="!canGoToNextPage()" 
+         (click)="canGoToNextPage() && onNextPage()">arrow_forward</div>
+</footer>

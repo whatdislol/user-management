@@ -1,0 +1,51 @@
+<h1>Documents</h1>
+<nav>
+    <input type="text" id="search" placeholder="⌕ Search" name="search">
+    <select name="sort_by" id="sort-by">
+        <option value="sort_by">Sort by</option>
+    </select>
+    <div class="filters material-icons">tune</div>
+</nav>
+<section>
+    <div class="material-icons">edit_calendar</div>
+    <div class="material-icons">zoom_out_map</div>
+    <div class="material-icons">assignment</div>
+    <div class="material-icons">print</div>
+    <div class="material-icons">delete</div>
+    <select name="time_period" id="time-period">
+        <option value="this_month">This Month</option>
+    </select>
+    <select name="doc_type" id="doc-type">
+        <option value="documents">Documents</option>
+    </select>
+    <button class="material-icons">add</button>
+</section>
+<table>
+    <tr>
+        <th colspan="5">
+            <h2>List of documents</h2>
+            <div>Lorem ipsum dolor sit amet</div>
+        </th>
+    </tr>
+    @for (i of repeatTimes(); track $index){
+        <tr>
+            <td>
+                <div class="material-icons doc-icon">description</div>
+            </td>
+            <td class="doc-info">
+                <div class="doc-name">Lorem ipsum</div>
+                <div class="doc-date">April 9, 2022</div>
+            </td>
+            <td class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</td>
+            <td class="invis"></td>
+            <td class="utils">
+                <div class="material-icons">edit</div>
+                <div class="material-icons">delete</div>
+            </td>
+        </tr>
+    }
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<div></div>

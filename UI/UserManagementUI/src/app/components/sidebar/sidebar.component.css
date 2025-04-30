@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.logo {
+    font-size: x-large;
+    font-weight: bold;
+} 
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+input:checked + div {
+    color: rgb(69, 69, 255);
+    border-right: 0.25rem solid rgb(69, 69, 255);
+    margin-right: -2rem;
+}

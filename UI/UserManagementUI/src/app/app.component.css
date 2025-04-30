@@ -1,0 +1,22 @@
+:host {
+    display: grid;
+    grid-template-columns: minmax(max-content, 20%) 1fr;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: auto;
+}
+
+main {
+    height: 100%;
+}
+
+app-sidebar {
+    background-color: white;
+}   

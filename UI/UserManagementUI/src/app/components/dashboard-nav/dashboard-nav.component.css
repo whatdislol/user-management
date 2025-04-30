@@ -1,0 +1,22 @@
+:host {
+    margin: auto auto 0 auto;
+    padding: 1rem 0;
+}
+
+footer {
+    display: flex;
+    gap: 2rem;
+}
+
+select,
+.next,
+.prev {
+    cursor: pointer;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.25rem solid gray;
+    padding-bottom: 0.25rem;
+}
